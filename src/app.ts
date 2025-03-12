@@ -11,7 +11,7 @@ const app: Application = express();
 // parsers
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ origin: 'https://car-shop-client.vercel.app', credentials: true }));
+app.use(cors({ origin: 'https://mealbox-server.vercel.app', credentials: true }));
 
 // logging
 app.use(morgan('dev'));
