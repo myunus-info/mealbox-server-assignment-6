@@ -20,7 +20,7 @@ app.use(morgan('dev'));
 app.use('/api', router);
 
 const getAController = async (req: Request, res: Response) => {
-  res.send('Welcome to my car shop');
+  res.send('Welcome to my MealBox restaurant');
 };
 app.get('/', getAController);
 
