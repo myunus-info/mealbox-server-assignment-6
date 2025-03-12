@@ -3,7 +3,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 
 // Synchronous error
-process.on('uncaughtException', (err) => {
+process.on('uncaughtException', err => {
   console.log(`🔥🔥🔥 UncaughtException detected. Shutting down...`);
   console.log(`${err.name}: ${err.message}`);
   process.exit(1);
@@ -31,7 +31,7 @@ async function bootstrap() {
 bootstrap();
 
 // Asynchronous error
-process.on('unhandledRejection', (err) => {
+process.on('unhandledRejection', err => {
   console.log(`🔥🔥🔥 UnhandledRejection detected. Shutting down... `);
   if (server) {
     server.close(() => {
